@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Concrete radar</title>
+<title>Concrete Writers</title>
 
 <style>
 body {
@@ -14,6 +14,7 @@ body {
   text-align: center;
 }
 
+/* HEADER */
 header {
   padding: 40px 20px;
 }
@@ -28,12 +29,14 @@ p {
   color: #B3B3B3;
 }
 
+/* CONTAINER */
 .container {
   max-width: 1100px;
   margin: auto;
   padding: 20px;
 }
 
+/* SECTION TITLES */
 h2 {
   margin-top: 50px;
   color: #F5D55F;
@@ -42,7 +45,7 @@ h2 {
   padding-bottom: 5px;
 }
 
-/* CARD GRID */
+/* GRID */
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -57,14 +60,18 @@ h2 {
   padding: 15px;
   border-radius: 10px;
   width: 220px;
-  transition: 0.2s;
+  transition: all 0.25s ease;
+  position: relative;
 }
 
+/* 🔥 YELLOW HOVER EFFECT */
 .card:hover {
-  background: #222;
-  transform: translateY(-3px);
+  transform: translateY(-5px);
+  border: 1px solid #F5D55F;
+  box-shadow: 0 0 15px #F5D55F33;
 }
 
+/* NAME + USER */
 .name {
   font-weight: bold;
   color: #FFFFFF;
@@ -77,6 +84,31 @@ h2 {
   margin-top: 5px;
 }
 
+.username:hover {
+  text-decoration: underline;
+}
+
+/* FLOATING BUTTON */
+.floating-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #F5D55F;
+  color: #0D0D0D;
+  padding: 12px 18px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  transition: all 0.2s ease;
+}
+
+.floating-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 15px #F5D55F;
+}
+
+/* FOOTER */
 footer {
   margin-top: 60px;
   padding: 30px;
@@ -92,13 +124,12 @@ footer p {
 <body>
 
 <header>
-  <h1>Concrete radar</h1>
-  <p>A place to find who’s actually active and building in Concrete</p>
+  <h1>Concrete Writers</h1>
+  <p>Tracking the builders, yappers, and grinders in Concrete.</p>
 </header>
 
 <div class="container">
 
-  <!-- CORE TEAM -->
   <h2>Core Team</h2>
   <div class="grid">
     <div class="card"><div class="name">Co-Founder</div><a class="username" href="https://x.com/dill_sl">@dill_sl</a></div>
@@ -106,7 +137,6 @@ footer p {
     <div class="card"><div class="name">Marketing Lead</div><a class="username" href="https://x.com/crypttoji">@crypttoji</a></div>
   </div>
 
-  <!-- MOAI -->
   <h2>MOAI Holders</h2>
   <div class="grid">
     <div class="card"><div class="name">Mongral</div><a class="username" href="https://x.com/mongralinweb3">@mongralinweb3</a></div>
@@ -114,7 +144,6 @@ footer p {
     <div class="card"><div class="name">Lidy</div><a class="username" href="https://x.com/Lidy_web3">@Lidy_web3</a></div>
   </div>
 
-  <!-- CONTENT CREATORS -->
   <h2>Content Creators</h2>
   <div class="grid">
 
@@ -143,10 +172,14 @@ footer p {
 
 </div>
 
+<!-- FLOATING BUTTON -->
+<a href="https://x.com/rakel8990" target="_blank" class="floating-btn">
+  + Get Listed
+</a>
+
 <footer>
-  <p>Created by kian</p>
- 
-  <p>Want to get listed? Reach out on X.</p>
+  <p>Created by you</p>
+  <p>Contact: your@email.com</p>
 </footer>
 
 </body>
